@@ -4,9 +4,13 @@
 
 <style>
   body  {
-    background-image:url(images/pastelbackground.jpg);
+    background-image:url(../images/pastelbackground.jpg);
     background-size:cover;
     font-family:Roboto Condensed;
+  }
+
+  .subt {
+    text-shadow: 2pt 2pt black;
   }
 
   #block1 {
@@ -15,18 +19,27 @@
     border-radius:20pt;
     margin: auto;
     padding: 20pt;
-    width: 40%;
+    width: 50%;
     margin-bottom: 5%;
     box-shadow: 5px 5px 5px black;
   }
   #b1title {
-    font-size: 12pt;
+    font-size: 20pt;
     padding: 5pt;
     text-align: center;
+    text-shadow: 2pt 2pt black;
 
   }
+  #image1 {
+    float: left;
+    margin: 200pt auto auto 50pt;
+    box-shadow: 5pt 5pt 5pt black;
+  }  
+
   #b1content {
-    font-size: 10pt;
+    overflow: hidden;
+
+    font-size: 14pt;
     font-weight: 400;
     padding: 10pt;
   }
@@ -80,19 +93,24 @@
     <!-- <div id="portrait">
       <img src="/images/jore.jpg" alt="Down at Rakaia River, 2021">
     </div> -->
-
+    <div id="image1"><img src="../images/margin&padding.jpg" alt="The CSS Box Model"></div>
     <div id="block1">
       <div id="b1title">
-        <h3>This is my Blog</h3>
+        <h2>What is the difference between Margin, Border, and Padding?</h2>
       </div>
       <div id="b1content">
-        <p> My name is Jore, I live in Wellington NZ and I am currently studying at Dev Academy.</p>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium diam nec tellus hendrerit, ut tristique libero volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque laoreet posuere consectetur. Maecenas dictum odio eget risus semper viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique justo felis, eget interdum metus placerat euismod. Vivamus cursus mauris posuere eleifend facilisis. Aliquam at vestibulum nibh. Phasellus lacus metus, blandit bibendum magna consequat, aliquam dapibus ex. Quisque ac pulvinar lacus. Fusce pharetra ante porta, varius risus in, malesuada massa. Phasellus commodo felis metus, sit amet egestas magna lacinia quis. Proin quis laoreet justo. Etiam convallis lacinia erat vel egestas. Quisque tristique augue purus, at efficitur arcu egestas eget. Proin bibendum, ex vitae molestie scelerisque, turpis tortor pretium sapien, et interdum urna massa eget est. Fusce laoreet a turpis vitae lobortis. Phasellus sed tincidunt libero. In hac habitasse platea dictumst. Morbi porta odio viverra libero fringilla dictum. Sed gravida ut lacus a tempor. Praesent sed libero ac magna condimentum auctor non quis ipsum. Proin libero nulla, semper consectetur augue a, elementum imperdiet nisl. Donec molestie non urna in sollicitudin. Sed nisl ligula, laoreet vitae egestas eu, posuere quis ligula. Vestibulum urna ipsum, eleifend eget blandit sit amet, dictum in lectus. Sed vel augue eu libero varius suscipit. Nulla congue est nulla, a tristique sem hendrerit in. Phasellus id consectetur ante. Sed id vulputate risus. Vestibulum sed lectus vel purus laoreet eleifend. Maecenas blandit malesuada felis quis porttitor. Curabitur dui est, aliquet vitae magna vel, interdum tincidunt magna. Sed volutpat urna eget nunc lobortis, sit amet dictum sem congue. Phasellus orci sem, dignissim in pellentesque vulputate, volutpat ac tortor.</p>
+        <p>To put it simply using the CSS Box Model, Margin, Border and Padding are used to define where and how you want something on the webpage. you use pixels as a unit to increase or decrease top bottom left and right directions for either margin or padding.</p>      
+        <h3 class="subt">Border</h3>
+        <p>Border is fairly self explanatory, editing these variables changes the border of the element you are interacting with. you can change the color of the border, the size, width pattern and spacing. You can even specify just one side to have the border on. this is the middle layer, it sits between the margin on the outside and the padding on the inside.  </p> 
+        <h3 class="subt">Margin</h3>
+        <p>Margin is the space between the border and the edge of element. this can be manipulated to push the element away from the edges of the page, or off of other elements in order to create distance and symmetry on the page. the margin is important in shaping how the overall page looks, and can be edited using clockwise notation in order to have more control. Negative margins can also be used for control or to overlap elements</p> 
+        <h3 class="subt">Padding</h3>
+        <p>Padding is a bit more complicated as it takes up the space used bewtween the border and the content. this means increasing the padding can either decrease the size of the content or increase the size of the element itself in order to fit, by default it will increase the element, padding is useful for making the clickable space on buttons bigger, or for creating whitespace inside the element between the content and border. </p> 
       </div>
     </div>
 
     <div id="button1"><a href="/index.html">Return</a></div>
-    <div id="button2"><a href="/blog/te-houtaewa-template.html">More</a></div>
+    <div id="button2"><a href=></a></div>
 
   </body>
 </html>
