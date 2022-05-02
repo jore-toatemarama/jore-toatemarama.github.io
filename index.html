@@ -50,34 +50,35 @@
     font-weight: 400;
     padding: 10pt;
   }
-  #button1 {
+  .dropdown {
     font-size: 20pt;
+    font-family: Amatic SC;
     background-color:rgba(0, 0, 0, 0.493);
     color:rgb(255, 255, 255);
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     border-radius:20pt;
-    margin: auto auto auto 500pt;
-    padding: 20pt;
-    width: 10%;
+    margin: auto auto auto 830px;
+    padding: 10pt;
+    width:10%;
     box-shadow: 5px 5px 5px black;
-
+    display: inline-block;
+    position: relative;
   }
-  #button2 {
-    font-size: 20pt;
-    background-color:rgba(0, 0, 0, 0.493);
-    color:rgb(255, 255, 255);
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius:20pt;
-    margin: -64pt 500pt auto auto;
-    padding: 20pt;
-    width: 10%;
-    box-shadow: 5px 5px 5px black;
-
+  .dropdown-content {
+    background-color: rgba(0, 0, 0, 0.774);
+    border-radius: 10pt;
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
   .portrait {
     border-radius:20pt;
     width: 250px;
@@ -86,9 +87,22 @@
     box-shadow: 2pt 1pt 1pt black;
     
   }
-  a:link, a:visited,  a:hover, a:active {
-    color: #ffffff;
+  .dropdown-content a {
+    display: block;
+    color: #f7f2f2;
+    padding: 5px;
     text-decoration: none;
+  }
+  .button {
+    font-family: Amatic SC;
+    background-color:transparent;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30pt;
   }
 
 </style>
@@ -118,8 +132,14 @@
       </div>
     </div>
 
-    <div id="button1"><a href="/blog/html-css.html">CSS Box Model</a></div>
-    <div id="button2"><a href="/blog/te-houtaewa-template.html">More</a></div>
+    <div class="dropdown">
+      <button class="button">Navigate</button>>
+        <div class="dropdown-content">
+          <a href="/blog/identity-values.html">Who Am I</a>
+          <a href="/blog/learning-plan.html">Learning Plan</a>
+          <a href="/blog/html-css.html">CSS Box Model</a>
+        </div>
+    </div>
 
   </body>
 </html>
