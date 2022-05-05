@@ -142,3 +142,23 @@
     justify-content: center;
     align-items: center;
   }
+
+  #returnbutton {
+    font-size: 25pt;
+    background-color:rgba(0, 0, 0, 0.493);
+    color:rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius:20pt;
+    margin: auto auto auto 600pt;
+    padding: 20pt;
+    width: 10%;
+    box-shadow: 5px 5px 5px black;
+    text-shadow: -1pt -1pt black;
+  }
+
+  a:link, a:visited,  a:hover, a:active {
+    color: #ffffff;
+    text-decoration: none;
+  }
