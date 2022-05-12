@@ -57,6 +57,7 @@ body  {
     padding: 2pt;
   }
   .dropdown {
+    background-image: url(/jore-toatemarama.github.io/images/jore.jpg);
     -webkit-appearance: none;
     font-size: 25pt;
     font-family: Amatic SC;
